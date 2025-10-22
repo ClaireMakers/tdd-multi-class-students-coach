@@ -6,7 +6,6 @@ As a **Coach**, I want to manage a class by being able to:
 1.  **Add** new **Student** objects to my roster.
 2.  Get a **total count** of all challenge **submissions** made by all students in my class.
 3.  **Print a formatted list** of all the student names.
-4.  **Upload a new submission** for every student in the class simultaneously.
 
 As a **Student**, I need to be able to:
 1.  **Record** a new challenge **submission**.
@@ -28,8 +27,7 @@ The `Coach` class **has a list of** `Student` objects (composition/aggregation),
 │ - count_submissions()      │
 │   => total submission count│
 │ - print_student_names()    │
-│   => "Name1, Name2, ..."   │
-│ - upload_submission_for... │
+│   => "Name1, Name2, ..."   |
 └───────────┬────────────────┘
             │
             │ owns a list of
@@ -98,10 +96,4 @@ class Coach:
         #   A string of all student names, separated by ", "
         pass
     
-    def upload_submission_for_students(self, submission):
-        # Parameters:
-        #   submission: string (name of the assignment/challenge)
-        # Side-effects:
-        #   Calls student.add_submission(submission) on every student the coach manages. (Delegation)
-        pass
 ```

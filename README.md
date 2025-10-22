@@ -18,7 +18,8 @@ This project demonstrates a simple multi-class system in Python, built with clea
 
 ## Project Diagram
 
-
+![user stories and diagram](diagram.png)
+![unit vs integration tests](integration_vs_unit.png)
 
 ## 💻 How to Run the Code
 
