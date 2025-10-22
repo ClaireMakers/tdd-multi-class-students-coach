@@ -4,6 +4,12 @@ This project demonstrates a simple multi-class system in Python, built with clea
 
 ## 🚀 Learning Objectives
 
+- Learn about the benefits of OOP. 
+
+- Use a diagram to understand better how to build a multi-class system.
+
+- TDDing methods in a multi-class system. 
+
 ## 📂 Project Structure
 ```bash
 .
@@ -20,44 +26,6 @@ This project demonstrates a simple multi-class system in Python, built with clea
 
 ![user stories and diagram](diagram.png)
 ![unit vs integration tests](integration_vs_unit.png)
-
-## 💻 How to Run the Code
-
-To explore the classes and their methods, you can use the Python interactive shell (REPL) directly from your terminal.
-
-First, navigate to the root of the project directory.
-
-### Step 1: Testing the `Student` Class (Isolation)
-
-The `Student` class is responsible for managing its own name and submissions.
-
-1.  Start the Python shell:
-
-    ```bash
-    python # or python3
-    ```
-
-2.  Import the class and create an instance:
-
-    ```python
-    >>> from lib.student import Student
-    >>> student = Student("Asha")
-    >>> student.name
-    'Asha'
-    >>> student.submissions
-    []
-    ```
-
-3.  Test the core functionality:
-
-    ```python
-    >>> student.add_submission("challenge-01-oop")
-    >>> student.add_submission("challenge-02-testing")
-    >>> student.submissions
-    ['challenge-01-oop', 'challenge-02-testing']
-    >>> student.count_submissions()
-    2
-    ```
 
 ## 🧪 Running the Tests
 
